@@ -32,40 +32,12 @@ final class UnzerType extends AbstractType
     {
         $builder
             ->add('gatewayType', ChoiceType::class, [
+                'required' => false,
                 'choices' => [
                     'PayPal', 'Sofort', 'CreditCard', 'DebitCard'
-                ]
-            ])
-            ->add('sandboxMode', CheckboxType::class, [
-
-            ])
-            ->add('securitySender', TextType::class, [
-                'constraints' => [
-                    new NotBlank([
-                        'groups' => 'coreshop',
-                    ]),
                 ],
+                'data' => 'CreditCard'
             ])
-            ->add('userLogin', TextType::class, [
-                'constraints' => [
-                    new NotBlank([
-                        'groups' => 'coreshop',
-                    ]),
-                ],
-            ])
-            ->add('userPassword', TextType::class, [
-                'constraints' => [
-                    new NotBlank([
-                        'groups' => 'coreshop',
-                    ]),
-                ]
-            ])
-            ->add('transactionChannel', TextType::class, [
-                'constraints' => [
-                    new NotBlank([
-                        'groups' => 'coreshop',
-                    ]),
-                ]
-            ]);
+        ;
     }
 }

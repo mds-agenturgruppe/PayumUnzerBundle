@@ -24,12 +24,12 @@ coreshop.provider.gateways.unzer = Class.create(coreshop.provider.gateways.abstr
         });
 
         return [
-            {
-                xtype: 'checkbox',
-                fieldLabel: t('unzer_sandboxMode'),
-                name: 'gatewayConfig.config.sandboxMode',
-                value: config.sandboxMode
-            },
+            // {
+            //     xtype: 'checkbox',
+            //     fieldLabel: t('unzer_sandboxMode'),
+            //     name: 'gatewayConfig.config.sandboxMode',
+            //     value: config.sandboxMode
+            // },
             {
                 xtype: 'combobox',
                 fieldLabel: t('unzer_gatewayType'),
@@ -43,34 +43,34 @@ coreshop.provider.gateways.unzer = Class.create(coreshop.provider.gateways.abstr
                 forceSelection: true,
                 selectOnFocus: true
             },
-            {
-                xtype: 'textfield',
-                fieldLabel: t('unzer_securitySender'),
-                name: 'gatewayConfig.config.securitySender',
-                length: 255,
-                value: config.securitySender ? config.securitySender : ""
-            },
-            {
-                xtype: 'textfield',
-                fieldLabel: t('unzer_userLogin'),
-                name: 'gatewayConfig.config.userLogin',
-                length: 255,
-                value: config.userLogin ? config.userLogin : ""
-            },
-            {
-                xtype: 'textfield',
-                fieldLabel: t('unzer_userPassword'),
-                name: 'gatewayConfig.config.userPassword',
-                length: 255,
-                value: config.userPassword ? config.userPassword : ""
-            },
-            {
-                xtype: 'textfield',
-                fieldLabel: t('unzer_transactionChannel'),
-                name: 'gatewayConfig.config.transactionChannel',
-                length: 255,
-                value: config.transactionChannel ? config.transactionChannel : ""
-            },
+            // {
+            //     xtype: 'textfield',
+            //     fieldLabel: t('unzer_securitySender'),
+            //     name: 'gatewayConfig.config.securitySender',
+            //     length: 255,
+            //     value: config.securitySender ? config.securitySender : ""
+            // },
+            // {
+            //     xtype: 'textfield',
+            //     fieldLabel: t('unzer_userLogin'),
+            //     name: 'gatewayConfig.config.userLogin',
+            //     length: 255,
+            //     value: config.userLogin ? config.userLogin : ""
+            // },
+            // {
+            //     xtype: 'textfield',
+            //     fieldLabel: t('unzer_userPassword'),
+            //     name: 'gatewayConfig.config.userPassword',
+            //     length: 255,
+            //     value: config.userPassword ? config.userPassword : ""
+            // },
+            // {
+            //     xtype: 'textfield',
+            //     fieldLabel: t('unzer_transactionChannel'),
+            //     name: 'gatewayConfig.config.transactionChannel',
+            //     length: 255,
+            //     value: config.transactionChannel ? config.transactionChannel : ""
+            // },
         ];
     }
 });
