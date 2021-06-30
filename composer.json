@@ -26,7 +26,7 @@
     ],
     "require": {
         "php": ">=7.1",
-        "coreshop/payum-unzer": "dev-dev",
+        "coreshop/payum-unzer": "^1.0",
         "coreshop/payum-bundle": "^2.0 | ^3.0",
         "moneyphp/money": "^3.2"
     },
@@ -50,11 +50,5 @@
                 "CoreShop\\Payum\\UnzerBundle\\UnzerBundle"
             ]
         }
-    },
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/mds-agenturgruppe/payum-unzer"
     }
-  ]
 }
